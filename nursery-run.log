@@ -1,0 +1,30 @@
+live           300  A: 1.00 (min 1.00) lag   75 [3/3] | B: 1.00 (min 1.00) lag   22 [3/3] | A again: 1.00 (min 1.00) lag   16 [3/3] | stable 1.00 aroused 0.15
+step           300  A: 0.87 (min 0.83) lag   75 [3/3] | B: 0.97 (min 0.96) lag    5 [3/3] | A again: 0.87 (min 0.65) lag  209 [2/3] | stable 1.00 aroused 1.00
+memory-only    300  A: 1.00 (min 1.00) lag   81 [3/3] | B: 0.91 (min 0.74) lag   70 [2/3] | A again: 0.90 (min 0.70) lag   59 [2/3] | stable 1.00 aroused 0.17
+graph-only     300  A: 0.65 (min 0.52) lag  154 [1/3] | B: 0.61 (min 0.55) lag    - [0/3] | A again: 0.73 (min 0.52) lag  127 [1/3] | stable 0.00 aroused 0.22
+tabular        300  A: 0.94 (min 0.92) lag   62 [3/3] | B: 0.95 (min 0.95) lag   34 [3/3] | A again: 0.95 (min 0.94) lag   45 [3/3] | stable 0.50 aroused 1.00
+{
+ "300": {
+  "lives": 3,
+  "crashed": 0,
+  "acquired": 1.0,
+  "reversed": 1.0,
+  "returned": 1.0,
+  "stable_kept": 1.0,
+  "calm": 1.0
+ },
+ "pooled": {
+  "lives": 3,
+  "crashed": 0,
+  "acquired": 1.0,
+  "reversed": 1.0,
+  "returned": 1.0,
+  "stable_kept": 1.0,
+  "calm": 1.0
+ },
+ "reversal_lag": {
+  "300": 22.0
+ },
+ "passed": true
+}
+{"verified": true, "reason": "canonical form, digest, sources, arithmetic agree", "receipt": "/workspace/scratch/6e1e191902c7/cadence-zoo-evidence/nursery-current-three-seeds.json.gz"}

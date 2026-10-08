@@ -1,0 +1,85 @@
+.................ss..ss.s..sss.sss.....ssss.........ss..........ss.ss..s [ 50%]
+s............................ss................................s....s.s  [100%]
+=============================== warnings summary ===============================
+tests/test_feedback_transaction.py::test_refused_reward_preserves_both_memories_and_retries_exactly_once[plain-cpu-consolidating]
+tests/test_feedback_transaction.py::test_refused_reward_preserves_both_memories_and_retries_exactly_once[plain-cpu-fast]
+tests/test_feedback_transaction.py::test_refused_reward_preserves_both_memories_and_retries_exactly_once[adaptive-cpu-consolidating]
+tests/test_feedback_transaction.py::test_refused_reward_preserves_both_memories_and_retries_exactly_once[adaptive-cpu-fast]
+  /workspace/scratch/6e1e191902c7/cadence-zoo-review/tests/test_feedback_transaction.py:117: RuntimeWarning: LearnerConfig with qualified=True and nudged_steps (128) below free_steps (1024): qualified teaching checks every phase against the full equations within its budget, and a nudged budget sized for finite teaching refuses lessons the free budget would settle. Set nudged_steps comparable to free_steps; see docs/learning.md#qualified-teaching-budgets.
+    learning=cd.LearnerConfig(
+
+tests/test_feedback_transaction.py::test_refused_reward_preserves_both_memories_and_retries_exactly_once[plain-cpu-consolidating]
+tests/test_feedback_transaction.py::test_refused_reward_preserves_both_memories_and_retries_exactly_once[plain-cpu-fast]
+tests/test_feedback_transaction.py::test_refused_reward_preserves_both_memories_and_retries_exactly_once[adaptive-cpu-consolidating]
+tests/test_feedback_transaction.py::test_refused_reward_preserves_both_memories_and_retries_exactly_once[adaptive-cpu-fast]
+  /workspace/scratch/6e1e191902c7/cadence-zoo-review/src/cadence/checkpoint.py:176: RuntimeWarning: LearnerConfig with qualified=True and nudged_steps (128) below free_steps (1024): qualified teaching checks every phase against the full equations within its budget, and a nudged budget sized for finite teaching refuses lessons the free budget would settle. Set nudged_steps comparable to free_steps; see docs/learning.md#qualified-teaching-budgets.
+    config or LearnerConfig(**_known_config(meta["config"])),
+
+tests/test_feedback_transaction.py::test_refused_reward_preserves_both_memories_and_retries_exactly_once[adaptive-cpu-consolidating]
+tests/test_feedback_transaction.py::test_refused_reward_preserves_both_memories_and_retries_exactly_once[adaptive-cpu-fast]
+  /workspace/scratch/6e1e191902c7/cadence-zoo-review/tests/test_feedback_transaction.py:120: RuntimeWarning: ActorCriticConfig with normalize > 0 and eta or eta_bias above 0.05: RMS normalization can make parameter steps much larger than raw contrasts suggest and may saturate the policy. Consider smaller actor rates; see docs/reward.md#rates-under-normalization.
+    reward=cd.ActorCriticConfig(
+
+tests/test_feedback_transaction.py::test_refused_reward_preserves_both_memories_and_retries_exactly_once[adaptive-cpu-consolidating]
+tests/test_feedback_transaction.py::test_refused_reward_preserves_both_memories_and_retries_exactly_once[adaptive-cpu-fast]
+  /workspace/scratch/6e1e191902c7/cadence-zoo-review/src/cadence/generic.py:1609: RuntimeWarning: ActorCriticConfig with normalize > 0 and eta or eta_bias above 0.05: RMS normalization can make parameter steps much larger than raw contrasts suggest and may saturate the policy. Consider smaller actor rates; see docs/reward.md#rates-under-normalization.
+    reward=ActorCriticConfig(**meta["reward"]),
+
+tests/test_qualified_learning.py::test_signed_slotted_lesson_qualifies_each_original_phase[cpu-None]
+  /workspace/scratch/6e1e191902c7/cadence-zoo-review/tests/test_qualified_learning.py:100: RuntimeWarning: LearnerConfig with normalize > 0 and eta or eta_bias above 0.05: RMS normalization can make parameter steps much larger than raw contrasts suggest and may saturate the readout. Consider smaller rates; see docs/learning.md#rates-under-normalization.
+    config = cd.LearnerConfig(
+
+tests/test_qualified_learning.py::test_one_unqualified_weighted_row_refuses_whole_slotted_lesson[cpu-None]
+  /workspace/scratch/6e1e191902c7/cadence-zoo-review/tests/test_qualified_learning.py:151: RuntimeWarning: LearnerConfig with normalize > 0 and eta or eta_bias above 0.05: RMS normalization can make parameter steps much larger than raw contrasts suggest and may saturate the readout. Consider smaller rates; see docs/learning.md#rates-under-normalization.
+    learner = cd.Learner(graph, np.arange(36), cd.LearnerConfig(
+
+tests/test_qualified_learning.py::test_one_unqualified_weighted_row_refuses_whole_slotted_lesson[cpu-None]
+  /workspace/scratch/6e1e191902c7/cadence-zoo-review/tests/test_qualified_learning.py:151: RuntimeWarning: LearnerConfig with qualified=True and nudged_steps (0) below free_steps (512): qualified teaching checks every phase against the full equations within its budget, and a nudged budget sized for finite teaching refuses lessons the free budget would settle. Set nudged_steps comparable to free_steps; see docs/learning.md#qualified-teaching-budgets.
+    learner = cd.Learner(graph, np.arange(36), cd.LearnerConfig(
+
+tests/test_qualified_learning.py::test_refusal_preserves_parameters_optimizer_and_warm_state[free]
+tests/test_qualified_learning.py::test_refusal_preserves_parameters_optimizer_and_warm_state[nudged]
+  /workspace/scratch/6e1e191902c7/cadence-zoo-review/tests/test_qualified_learning.py:180: RuntimeWarning: LearnerConfig with normalize > 0 and eta or eta_bias above 0.05: RMS normalization can make parameter steps much larger than raw contrasts suggest and may saturate the readout. Consider smaller rates; see docs/learning.md#rates-under-normalization.
+    config = cd.LearnerConfig(
+
+tests/test_qualified_learning.py::test_opposite_refusal_keeps_all_work_before_any_optimizer_write
+  /workspace/scratch/6e1e191902c7/cadence-zoo-review/tests/test_qualified_learning.py:217: RuntimeWarning: LearnerConfig with normalize > 0 and eta or eta_bias above 0.05: RMS normalization can make parameter steps much larger than raw contrasts suggest and may saturate the readout. Consider smaller rates; see docs/learning.md#rates-under-normalization.
+    learner = cd.Learner(graph, np.arange(36), cd.LearnerConfig(
+
+tests/test_qualified_learning.py::test_composed_qualified_learning_saved_continuation_and_private_memory
+  /workspace/scratch/6e1e191902c7/cadence-zoo-review/tests/test_qualified_learning.py:334: RuntimeWarning: LearnerConfig with normalize > 0 and eta or eta_bias above 0.05: RMS normalization can make parameter steps much larger than raw contrasts suggest and may saturate the readout. Consider smaller rates; see docs/learning.md#rates-under-normalization.
+    brain = cd.Brain.compose(2, 36, modules=(4,), seed=0, learning=cd.LearnerConfig(
+
+tests/test_qualified_learning.py::test_composed_qualified_learning_saved_continuation_and_private_memory
+  /workspace/scratch/6e1e191902c7/cadence-zoo-review/src/cadence/checkpoint.py:176: RuntimeWarning: LearnerConfig with normalize > 0 and eta or eta_bias above 0.05: RMS normalization can make parameter steps much larger than raw contrasts suggest and may saturate the readout. Consider smaller rates; see docs/learning.md#rates-under-normalization.
+    config or LearnerConfig(**_known_config(meta["config"])),
+
+tests/test_qualified_learning.py::test_finite_default_retains_its_update_and_reports_unqualified_phase_errors
+  /workspace/scratch/6e1e191902c7/cadence-zoo-review/tests/test_qualified_learning.py:364: RuntimeWarning: finite teaching free phase used its entire free_steps budget; the lesson may have been learned from a state that did not settle (free_residual in the report holds the equation residual). Raise free_steps, lower the gain, or opt into qualified=True to refuse such lessons; see docs/learning.md#finite-free-phases-that-run-out-of-budget.
+    _, report = first.step(drive, labels)
+
+tests/test_settlement_reports.py::test_action_report_counts_actual_free_work_and_excludes_reward_eligibility[True]
+  /opt/codex/runtimes/codex-primary-runtime/dependencies/python/lib/python3.12/dataclasses.py:1588: RuntimeWarning: LearnerConfig with qualified=True and nudged_steps (12) below free_steps (1024): qualified teaching checks every phase against the full equations within its budget, and a nudged budget sized for finite teaching refuses lessons the free budget would settle. Set nudged_steps comparable to free_steps; see docs/learning.md#qualified-teaching-budgets.
+    return obj.__class__(**changes)
+
+-- Docs: https://docs.pytest.org/en/stable/how-to/capture-warnings.html
+============================= slowest 5 durations ==============================
+0.70s call     tests/test_composed_acquisition.py::test_default_composition_acquires_labels_with_qualified_free_answers[0]
+0.66s call     tests/test_policy_credit.py::test_critic_keeps_reward_units_when_actor_dopamine_is_centred_or_clipped[cpu]
+0.62s call     tests/test_composed_acquisition.py::test_default_composition_acquires_labels_with_qualified_free_answers[1]
+0.61s call     tests/test_composed_acquisition.py::test_default_composition_acquires_labels_with_qualified_free_answers[2]
+0.48s setup    tests/test_memory_imagination.py::test_acquisition_and_protected_plasticity_are_both_measured
+=========================== short test summary info ============================
+SKIPPED [4] tests/test_feedback_transaction.py:113: could not import 'torch': No module named 'torch'
+SKIPPED [5] tests/test_qualified_learning.py:11: could not import 'torch': No module named 'torch'
+SKIPPED [2] tests/test_qualified_learning.py:13: could not import 'mlx.core': No module named 'mlx'
+SKIPPED [4] tests/test_qualified_learning.py:247: could not import 'torch': No module named 'torch'
+SKIPPED [4] tests/test_damping_stagnation.py:11: could not import 'torch': No module named 'torch'
+SKIPPED [2] tests/test_damping_stagnation.py:13: could not import 'mlx.core': No module named 'mlx'
+SKIPPED [1] tests/test_damping_stagnation.py:106: could not import 'torch': No module named 'torch'
+SKIPPED [1] tests/test_damping_stagnation.py:108: could not import 'mlx.core': No module named 'mlx'
+SKIPPED [2] tests/test_generic_memory_checkpoint.py:60: torch
+SKIPPED [1] tests/test_policy_credit.py:32: could not import 'torch': No module named 'torch'
+SKIPPED [1] tests/test_policy_credit.py:103: could not import 'torch': No module named 'torch'
+SKIPPED [1] tests/test_policy_credit.py:136: could not import 'torch': No module named 'torch'
+115 passed, 28 skipped, 22 warnings in 5.96s

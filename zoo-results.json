@@ -1,0 +1,1055 @@
+{
+  "schema": "cadence-zoo-audit/1",
+  "receipt_sha256": "bacc75317b0f487aa6d81fc3f4015b3df5775eca2720f3d97950e3c7fd4599a7",
+  "scope": "Two selected numerical operations, 46 applicability decisions. Not a 46-animal scientific pass.",
+  "diagnostic_gates": {
+    "300": {
+      "acquired": 1.0,
+      "calm": 1.0,
+      "crashed": 0,
+      "lives": 3,
+      "returned": 1.0,
+      "reversed": 1.0,
+      "stable_kept": 1.0
+    },
+    "passed": true,
+    "pooled": {
+      "acquired": 1.0,
+      "calm": 1.0,
+      "crashed": 0,
+      "lives": 3,
+      "returned": 1.0,
+      "reversed": 1.0,
+      "stable_kept": 1.0
+    },
+    "reversal_lag": {
+      "300": 22.0
+    }
+  },
+  "summary": [
+    {
+      "arm": "live",
+      "lives": 3,
+      "crashes": 0,
+      "mean_final_accuracy": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "reversal_lag_median_with_nonrecovery": 22,
+      "recovered_by_lag_definition": 3,
+      "mean_seconds_including_probes": 4.976666666666667,
+      "total_counted_sweeps": 166023,
+      "learning_sweeps": 5063,
+      "memory_writes": 491
+    },
+    {
+      "arm": "step",
+      "lives": 3,
+      "crashes": 0,
+      "mean_final_accuracy": [
+        0.8733333333333333,
+        0.9733333333333333,
+        0.87
+      ],
+      "reversal_lag_median_with_nonrecovery": 5,
+      "recovered_by_lag_definition": 3,
+      "mean_seconds_including_probes": 6.819999999999999,
+      "total_counted_sweeps": 201579,
+      "learning_sweeps": 58059,
+      "memory_writes": 4500
+    },
+    {
+      "arm": "memory-only",
+      "lives": 3,
+      "crashes": 0,
+      "mean_final_accuracy": [
+        1.0,
+        0.9133333333333333,
+        0.9
+      ],
+      "reversal_lag_median_with_nonrecovery": 85,
+      "recovered_by_lag_definition": 2,
+      "mean_seconds_including_probes": 5.016666666666667,
+      "total_counted_sweeps": 161104,
+      "learning_sweeps": 5360,
+      "memory_writes": 601
+    },
+    {
+      "arm": "graph-only",
+      "lives": 3,
+      "crashes": 0,
+      "mean_final_accuracy": [
+        0.6533333333333333,
+        0.61,
+        0.7333333333333334
+      ],
+      "reversal_lag_median_with_nonrecovery": null,
+      "recovered_by_lag_definition": 0,
+      "mean_seconds_including_probes": 5.08,
+      "total_counted_sweeps": 169551,
+      "learning_sweeps": 9999,
+      "memory_writes": 0
+    },
+    {
+      "arm": "tabular",
+      "lives": 3,
+      "crashes": 0,
+      "mean_final_accuracy": [
+        0.94,
+        0.9533333333333333,
+        0.9533333333333333
+      ],
+      "reversal_lag_median_with_nonrecovery": 34,
+      "recovered_by_lag_definition": 3,
+      "mean_seconds_including_probes": 0.01,
+      "total_counted_sweeps": 0,
+      "learning_sweeps": 0,
+      "memory_writes": 0
+    }
+  ],
+  "operations": [
+    {
+      "animal": "CAT",
+      "arm": "graph-only",
+      "seed": 17001,
+      "phase": "reversal B",
+      "inputs": {
+        "full": 0.0,
+        "ablated": 0.29000000000000004
+      },
+      "output": {
+        "penalty": 0.29000000000000004,
+        "label": "removalHurt"
+      }
+    },
+    {
+      "animal": "CAT",
+      "arm": "graph-only",
+      "seed": 17001,
+      "phase": "return A",
+      "inputs": {
+        "full": 0.0,
+        "ablated": 0.31999999999999995
+      },
+      "output": {
+        "penalty": 0.31999999999999995,
+        "label": "removalHurt"
+      }
+    },
+    {
+      "animal": "CAT",
+      "arm": "graph-only",
+      "seed": 17002,
+      "phase": "reversal B",
+      "inputs": {
+        "full": 0.0,
+        "ablated": 0.44999999999999996
+      },
+      "output": {
+        "penalty": 0.44999999999999996,
+        "label": "removalHurt"
+      }
+    },
+    {
+      "animal": "CAT",
+      "arm": "graph-only",
+      "seed": 17002,
+      "phase": "return A",
+      "inputs": {
+        "full": 0.0,
+        "ablated": 0.48
+      },
+      "output": {
+        "penalty": 0.48,
+        "label": "removalHurt"
+      }
+    },
+    {
+      "animal": "CAT",
+      "arm": "graph-only",
+      "seed": 17003,
+      "phase": "reversal B",
+      "inputs": {
+        "full": 0.0,
+        "ablated": 0.43000000000000005
+      },
+      "output": {
+        "penalty": 0.43000000000000005,
+        "label": "removalHurt"
+      }
+    },
+    {
+      "animal": "CAT",
+      "arm": "graph-only",
+      "seed": 17003,
+      "phase": "return A",
+      "inputs": {
+        "full": 0.0,
+        "ablated": 0.0
+      },
+      "output": {
+        "penalty": 0.0,
+        "label": "noChange"
+      }
+    },
+    {
+      "animal": "CAT",
+      "arm": "memory-only",
+      "seed": 17001,
+      "phase": "reversal B",
+      "inputs": {
+        "full": 0.0,
+        "ablated": 0.0
+      },
+      "output": {
+        "penalty": 0.0,
+        "label": "noChange"
+      }
+    },
+    {
+      "animal": "CAT",
+      "arm": "memory-only",
+      "seed": 17001,
+      "phase": "return A",
+      "inputs": {
+        "full": 0.0,
+        "ablated": 0.0
+      },
+      "output": {
+        "penalty": 0.0,
+        "label": "noChange"
+      }
+    },
+    {
+      "animal": "CAT",
+      "arm": "memory-only",
+      "seed": 17002,
+      "phase": "reversal B",
+      "inputs": {
+        "full": 0.0,
+        "ablated": 0.0
+      },
+      "output": {
+        "penalty": 0.0,
+        "label": "noChange"
+      }
+    },
+    {
+      "animal": "CAT",
+      "arm": "memory-only",
+      "seed": 17002,
+      "phase": "return A",
+      "inputs": {
+        "full": 0.0,
+        "ablated": 0.0
+      },
+      "output": {
+        "penalty": 0.0,
+        "label": "noChange"
+      }
+    },
+    {
+      "animal": "CAT",
+      "arm": "memory-only",
+      "seed": 17003,
+      "phase": "reversal B",
+      "inputs": {
+        "full": 0.0,
+        "ablated": 0.26
+      },
+      "output": {
+        "penalty": 0.26,
+        "label": "removalHurt"
+      }
+    },
+    {
+      "animal": "CAT",
+      "arm": "memory-only",
+      "seed": 17003,
+      "phase": "return A",
+      "inputs": {
+        "full": 0.0,
+        "ablated": 0.30000000000000004
+      },
+      "output": {
+        "penalty": 0.30000000000000004,
+        "label": "removalHurt"
+      }
+    },
+    {
+      "animal": "RHINO",
+      "arm": "live",
+      "seed": 17001,
+      "phase": "reversal B",
+      "inputs": {
+        "baseline": 1.0,
+        "after": 1.0
+      },
+      "output": {
+        "retention": 1.0
+      },
+      "absolute_floor_met": true,
+      "baseline_floor_met": true
+    },
+    {
+      "animal": "RHINO",
+      "arm": "live",
+      "seed": 17001,
+      "phase": "return A",
+      "inputs": {
+        "baseline": 1.0,
+        "after": 1.0
+      },
+      "output": {
+        "retention": 1.0
+      },
+      "absolute_floor_met": true,
+      "baseline_floor_met": true
+    },
+    {
+      "animal": "RHINO",
+      "arm": "live",
+      "seed": 17002,
+      "phase": "reversal B",
+      "inputs": {
+        "baseline": 1.0,
+        "after": 1.0
+      },
+      "output": {
+        "retention": 1.0
+      },
+      "absolute_floor_met": true,
+      "baseline_floor_met": true
+    },
+    {
+      "animal": "RHINO",
+      "arm": "live",
+      "seed": 17002,
+      "phase": "return A",
+      "inputs": {
+        "baseline": 1.0,
+        "after": 1.0
+      },
+      "output": {
+        "retention": 1.0
+      },
+      "absolute_floor_met": true,
+      "baseline_floor_met": true
+    },
+    {
+      "animal": "RHINO",
+      "arm": "live",
+      "seed": 17003,
+      "phase": "reversal B",
+      "inputs": {
+        "baseline": 1.0,
+        "after": 1.0
+      },
+      "output": {
+        "retention": 1.0
+      },
+      "absolute_floor_met": true,
+      "baseline_floor_met": true
+    },
+    {
+      "animal": "RHINO",
+      "arm": "live",
+      "seed": 17003,
+      "phase": "return A",
+      "inputs": {
+        "baseline": 1.0,
+        "after": 1.0
+      },
+      "output": {
+        "retention": 1.0
+      },
+      "absolute_floor_met": true,
+      "baseline_floor_met": true
+    },
+    {
+      "animal": "RHINO",
+      "arm": "step",
+      "seed": 17001,
+      "phase": "reversal B",
+      "inputs": {
+        "baseline": 1.0,
+        "after": 1.0
+      },
+      "output": {
+        "retention": 1.0
+      },
+      "absolute_floor_met": true,
+      "baseline_floor_met": true
+    },
+    {
+      "animal": "RHINO",
+      "arm": "step",
+      "seed": 17001,
+      "phase": "return A",
+      "inputs": {
+        "baseline": 1.0,
+        "after": 1.0
+      },
+      "output": {
+        "retention": 1.0
+      },
+      "absolute_floor_met": true,
+      "baseline_floor_met": true
+    },
+    {
+      "animal": "RHINO",
+      "arm": "step",
+      "seed": 17002,
+      "phase": "reversal B",
+      "inputs": {
+        "baseline": 1.0,
+        "after": 1.0
+      },
+      "output": {
+        "retention": 1.0
+      },
+      "absolute_floor_met": true,
+      "baseline_floor_met": true
+    },
+    {
+      "animal": "RHINO",
+      "arm": "step",
+      "seed": 17002,
+      "phase": "return A",
+      "inputs": {
+        "baseline": 1.0,
+        "after": 1.0
+      },
+      "output": {
+        "retention": 1.0
+      },
+      "absolute_floor_met": true,
+      "baseline_floor_met": true
+    },
+    {
+      "animal": "RHINO",
+      "arm": "step",
+      "seed": 17003,
+      "phase": "reversal B",
+      "inputs": {
+        "baseline": 1.0,
+        "after": 1.0
+      },
+      "output": {
+        "retention": 1.0
+      },
+      "absolute_floor_met": true,
+      "baseline_floor_met": true
+    },
+    {
+      "animal": "RHINO",
+      "arm": "step",
+      "seed": 17003,
+      "phase": "return A",
+      "inputs": {
+        "baseline": 1.0,
+        "after": 1.0
+      },
+      "output": {
+        "retention": 1.0
+      },
+      "absolute_floor_met": true,
+      "baseline_floor_met": true
+    },
+    {
+      "animal": "RHINO",
+      "arm": "memory-only",
+      "seed": 17001,
+      "phase": "reversal B",
+      "inputs": {
+        "baseline": 1.0,
+        "after": 1.0
+      },
+      "output": {
+        "retention": 1.0
+      },
+      "absolute_floor_met": true,
+      "baseline_floor_met": true
+    },
+    {
+      "animal": "RHINO",
+      "arm": "memory-only",
+      "seed": 17001,
+      "phase": "return A",
+      "inputs": {
+        "baseline": 1.0,
+        "after": 1.0
+      },
+      "output": {
+        "retention": 1.0
+      },
+      "absolute_floor_met": true,
+      "baseline_floor_met": true
+    },
+    {
+      "animal": "RHINO",
+      "arm": "memory-only",
+      "seed": 17002,
+      "phase": "reversal B",
+      "inputs": {
+        "baseline": 1.0,
+        "after": 1.0
+      },
+      "output": {
+        "retention": 1.0
+      },
+      "absolute_floor_met": true,
+      "baseline_floor_met": true
+    },
+    {
+      "animal": "RHINO",
+      "arm": "memory-only",
+      "seed": 17002,
+      "phase": "return A",
+      "inputs": {
+        "baseline": 1.0,
+        "after": 1.0
+      },
+      "output": {
+        "retention": 1.0
+      },
+      "absolute_floor_met": true,
+      "baseline_floor_met": true
+    },
+    {
+      "animal": "RHINO",
+      "arm": "memory-only",
+      "seed": 17003,
+      "phase": "reversal B",
+      "inputs": {
+        "baseline": 1.0,
+        "after": 1.0
+      },
+      "output": {
+        "retention": 1.0
+      },
+      "absolute_floor_met": true,
+      "baseline_floor_met": true
+    },
+    {
+      "animal": "RHINO",
+      "arm": "memory-only",
+      "seed": 17003,
+      "phase": "return A",
+      "inputs": {
+        "baseline": 1.0,
+        "after": 1.0
+      },
+      "output": {
+        "retention": 1.0
+      },
+      "absolute_floor_met": true,
+      "baseline_floor_met": true
+    },
+    {
+      "animal": "RHINO",
+      "arm": "graph-only",
+      "seed": 17001,
+      "phase": "reversal B",
+      "inputs": {
+        "baseline": 0.125,
+        "after": 0.375
+      },
+      "output": {
+        "retention": 1.0
+      },
+      "absolute_floor_met": false,
+      "baseline_floor_met": false
+    },
+    {
+      "animal": "RHINO",
+      "arm": "graph-only",
+      "seed": 17001,
+      "phase": "return A",
+      "inputs": {
+        "baseline": 0.125,
+        "after": 0.5833333333333334
+      },
+      "output": {
+        "retention": 1.0
+      },
+      "absolute_floor_met": false,
+      "baseline_floor_met": false
+    },
+    {
+      "animal": "RHINO",
+      "arm": "graph-only",
+      "seed": 17002,
+      "phase": "reversal B",
+      "inputs": {
+        "baseline": 0.625,
+        "after": 0.0
+      },
+      "output": {
+        "retention": 0.0
+      },
+      "absolute_floor_met": false,
+      "baseline_floor_met": false
+    },
+    {
+      "animal": "RHINO",
+      "arm": "graph-only",
+      "seed": 17002,
+      "phase": "return A",
+      "inputs": {
+        "baseline": 0.625,
+        "after": 0.0
+      },
+      "output": {
+        "retention": 0.0
+      },
+      "absolute_floor_met": false,
+      "baseline_floor_met": false
+    },
+    {
+      "animal": "RHINO",
+      "arm": "graph-only",
+      "seed": 17003,
+      "phase": "reversal B",
+      "inputs": {
+        "baseline": 0.875,
+        "after": 0.7916666666666666
+      },
+      "output": {
+        "retention": 0.9047619047619048
+      },
+      "absolute_floor_met": false,
+      "baseline_floor_met": false
+    },
+    {
+      "animal": "RHINO",
+      "arm": "graph-only",
+      "seed": 17003,
+      "phase": "return A",
+      "inputs": {
+        "baseline": 0.875,
+        "after": 0.9166666666666666
+      },
+      "output": {
+        "retention": 1.0
+      },
+      "absolute_floor_met": false,
+      "baseline_floor_met": false
+    },
+    {
+      "animal": "RHINO",
+      "arm": "tabular",
+      "seed": 17001,
+      "phase": "reversal B",
+      "inputs": {
+        "baseline": 1.0,
+        "after": 1.0
+      },
+      "output": {
+        "retention": 1.0
+      },
+      "absolute_floor_met": true,
+      "baseline_floor_met": true
+    },
+    {
+      "animal": "RHINO",
+      "arm": "tabular",
+      "seed": 17001,
+      "phase": "return A",
+      "inputs": {
+        "baseline": 1.0,
+        "after": 1.0
+      },
+      "output": {
+        "retention": 1.0
+      },
+      "absolute_floor_met": true,
+      "baseline_floor_met": true
+    },
+    {
+      "animal": "RHINO",
+      "arm": "tabular",
+      "seed": 17002,
+      "phase": "reversal B",
+      "inputs": {
+        "baseline": 0.5,
+        "after": 1.0
+      },
+      "output": {
+        "retention": 1.0
+      },
+      "absolute_floor_met": true,
+      "baseline_floor_met": false
+    },
+    {
+      "animal": "RHINO",
+      "arm": "tabular",
+      "seed": 17002,
+      "phase": "return A",
+      "inputs": {
+        "baseline": 0.5,
+        "after": 1.0
+      },
+      "output": {
+        "retention": 1.0
+      },
+      "absolute_floor_met": true,
+      "baseline_floor_met": false
+    },
+    {
+      "animal": "RHINO",
+      "arm": "tabular",
+      "seed": 17003,
+      "phase": "reversal B",
+      "inputs": {
+        "baseline": 1.0,
+        "after": 1.0
+      },
+      "output": {
+        "retention": 1.0
+      },
+      "absolute_floor_met": true,
+      "baseline_floor_met": true
+    },
+    {
+      "animal": "RHINO",
+      "arm": "tabular",
+      "seed": 17003,
+      "phase": "return A",
+      "inputs": {
+        "baseline": 1.0,
+        "after": 1.0
+      },
+      "output": {
+        "retention": 1.0
+      },
+      "absolute_floor_met": true,
+      "baseline_floor_met": true
+    }
+  ],
+  "coverage": [
+    {
+      "id": 1,
+      "animal": "TORTOISE",
+      "canonical_scope": "ordered split; temporal separation contract; Brier gain",
+      "status": "not_executed",
+      "reason": "No prespecified per-outcome candidate/control Brier scores; accuracy is not Brier score."
+    },
+    {
+      "id": 2,
+      "animal": "OWL",
+      "canonical_scope": "rank aggregation of precomputed component columns; feature extraction and model training not ported",
+      "status": "not_executed",
+      "reason": "Selected adapter ranks supplied component columns; no validated Cadence feature/normalization/comparator matrix. A rank would not validate a mechanism."
+    },
+    {
+      "id": 3,
+      "animal": "OCTOPUS",
+      "canonical_scope": "rank aggregation of precomputed component columns; feature extraction and model training not ported",
+      "status": "not_executed",
+      "reason": "Selected adapter ranks supplied component columns; no validated Cadence feature/normalization/comparator matrix. A rank would not validate a mechanism."
+    },
+    {
+      "id": 4,
+      "animal": "GECKO",
+      "canonical_scope": "rank aggregation of precomputed component columns; feature extraction and model training not ported",
+      "status": "not_executed",
+      "reason": "Selected adapter ranks supplied component columns; no validated Cadence feature/normalization/comparator matrix. A rank would not validate a mechanism."
+    },
+    {
+      "id": 5,
+      "animal": "HIVE",
+      "canonical_scope": "rank aggregation of precomputed component columns; feature extraction and model training not ported",
+      "status": "not_executed",
+      "reason": "Selected adapter ranks supplied component columns; no validated Cadence feature/normalization/comparator matrix. A rank would not validate a mechanism."
+    },
+    {
+      "id": 6,
+      "animal": "EAGLE",
+      "canonical_scope": "rank aggregation of precomputed component columns; feature extraction and model training not ported",
+      "status": "not_executed",
+      "reason": "Selected adapter ranks supplied component columns; no validated Cadence feature/normalization/comparator matrix. A rank would not validate a mechanism."
+    },
+    {
+      "id": 7,
+      "animal": "CRAB",
+      "canonical_scope": "rank aggregation of precomputed component columns; feature extraction and model training not ported",
+      "status": "not_executed",
+      "reason": "Selected adapter ranks supplied component columns; no validated Cadence feature/normalization/comparator matrix. A rank would not validate a mechanism."
+    },
+    {
+      "id": 8,
+      "animal": "SHEPHERD",
+      "canonical_scope": "rank aggregation of precomputed component columns; feature extraction and model training not ported",
+      "status": "not_executed",
+      "reason": "Selected adapter ranks supplied component columns; no validated Cadence feature/normalization/comparator matrix. A rank would not validate a mechanism."
+    },
+    {
+      "id": 9,
+      "animal": "PULSE",
+      "canonical_scope": "rank aggregation of precomputed component columns; feature extraction and model training not ported",
+      "status": "not_executed",
+      "reason": "Selected adapter ranks supplied component columns; no validated Cadence feature/normalization/comparator matrix. A rank would not validate a mechanism."
+    },
+    {
+      "id": 10,
+      "animal": "CAT",
+      "canonical_scope": "ablation penalty and sign classifier; exact-integer sign reference",
+      "status": "selected_operation_executed",
+      "reason": "Executed paired final-action-loss ablations; necessity is local to task, operating point and seeds."
+    },
+    {
+      "id": 11,
+      "animal": "FOX",
+      "canonical_scope": "rank aggregation of precomputed component columns; feature extraction and model training not ported",
+      "status": "not_executed",
+      "reason": "Selected adapter ranks supplied component columns; no validated Cadence feature/normalization/comparator matrix. A rank would not validate a mechanism."
+    },
+    {
+      "id": 12,
+      "animal": "SPIDER",
+      "canonical_scope": "rank aggregation of precomputed component columns; feature extraction and model training not ported",
+      "status": "not_executed",
+      "reason": "Selected adapter ranks supplied component columns; no validated Cadence feature/normalization/comparator matrix. A rank would not validate a mechanism."
+    },
+    {
+      "id": 13,
+      "animal": "RAVEN",
+      "canonical_scope": "rank aggregation of precomputed component columns; feature extraction and model training not ported",
+      "status": "not_executed",
+      "reason": "Selected adapter ranks supplied component columns; no validated Cadence feature/normalization/comparator matrix. A rank would not validate a mechanism."
+    },
+    {
+      "id": 14,
+      "animal": "DOLPHIN",
+      "canonical_scope": "rank aggregation of precomputed component columns; feature extraction and model training not ported",
+      "status": "not_executed",
+      "reason": "Selected adapter ranks supplied component columns; no validated Cadence feature/normalization/comparator matrix. A rank would not validate a mechanism."
+    },
+    {
+      "id": 15,
+      "animal": "ANT",
+      "canonical_scope": "rank aggregation of precomputed component columns; feature extraction and model training not ported",
+      "status": "not_executed",
+      "reason": "Selected adapter ranks supplied component columns; no validated Cadence feature/normalization/comparator matrix. A rank would not validate a mechanism."
+    },
+    {
+      "id": 16,
+      "animal": "MOTH",
+      "canonical_scope": "rank aggregation of precomputed component columns; feature extraction and model training not ported",
+      "status": "not_executed",
+      "reason": "Selected adapter ranks supplied component columns; no validated Cadence feature/normalization/comparator matrix. A rank would not validate a mechanism."
+    },
+    {
+      "id": 17,
+      "animal": "SHARK",
+      "canonical_scope": "rank aggregation of precomputed component columns; feature extraction and model training not ported",
+      "status": "not_executed",
+      "reason": "Selected adapter ranks supplied component columns; no validated Cadence feature/normalization/comparator matrix. A rank would not validate a mechanism."
+    },
+    {
+      "id": 18,
+      "animal": "PENGUIN",
+      "canonical_scope": "rank aggregation of precomputed component columns; feature extraction and model training not ported",
+      "status": "not_executed",
+      "reason": "Selected adapter ranks supplied component columns; no validated Cadence feature/normalization/comparator matrix. A rank would not validate a mechanism."
+    },
+    {
+      "id": 19,
+      "animal": "BAT",
+      "canonical_scope": "verdict kernel with source placebo precedence; fitting excluded",
+      "status": "not_executed",
+      "reason": "No matched placebo Brier-score experiment; tabular accuracy is a baseline, not this kernel's inputs."
+    },
+    {
+      "id": 20,
+      "animal": "HEDGEHOG",
+      "canonical_scope": "generalization verdict and environment separation obligation; training excluded",
+      "status": "not_executed",
+      "reason": "No fresh family-disjoint held-out task panel; new RNG seeds in a known four-cue task are not domain transfer."
+    },
+    {
+      "id": 21,
+      "animal": "CROCODILE",
+      "canonical_scope": "difference-in-differences kernel and conditional identification contract",
+      "status": "not_executed",
+      "reason": "Paired arms are available, but no preregistered difference-in-differences estimand or parallel-trend argument."
+    },
+    {
+      "id": 22,
+      "animal": "DRAGON",
+      "canonical_scope": "rank aggregation of precomputed component columns; feature extraction and model training not ported",
+      "status": "not_executed",
+      "reason": "Selected adapter ranks supplied component columns; no validated Cadence feature/normalization/comparator matrix. A rank would not validate a mechanism."
+    },
+    {
+      "id": 23,
+      "animal": "TURTLE",
+      "canonical_scope": "summary verdict and veto precedence; group normalization supplied",
+      "status": "not_executed",
+      "reason": "No separately normalized evidence groups or prespecified aggregate veto/admission policy."
+    },
+    {
+      "id": 24,
+      "animal": "MAGPIE",
+      "canonical_scope": "groundedness and history-dependent alarm; entropy/storage excluded",
+      "status": "not_executed",
+      "reason": "No groundedness time series and alarm history with an externally defined metric."
+    },
+    {
+      "id": 25,
+      "animal": "WOLF",
+      "canonical_scope": "local channel contribution, weight, EMA and alarm contract; graph aggregation supplied",
+      "status": "not_executed",
+      "reason": "No prespecified weighted local-channel measurements and EMA alarm thresholds."
+    },
+    {
+      "id": 26,
+      "animal": "ELEPHANT",
+      "canonical_scope": "active-event filter and fuel-bounded lineage abstraction; full memory API excluded",
+      "status": "not_executed",
+      "reason": "Receipt/source hashes inspected; no active-event and lineage input schema for this operation."
+    },
+    {
+      "id": 27,
+      "animal": "CHAMELEON",
+      "canonical_scope": "unexplained/noise-adjusted excess; supplied centroid distances",
+      "status": "not_executed",
+      "reason": "No supplied distances separating structural change from measurement noise."
+    },
+    {
+      "id": 28,
+      "animal": "JELLYFISH",
+      "canonical_scope": "dynamic edge weight, flow, next health and harm; graph aggregation supplied",
+      "status": "not_executed",
+      "reason": "No stress/confidence/health propagation measurements or harm graph."
+    },
+    {
+      "id": 29,
+      "animal": "BEAVER",
+      "canonical_scope": "acceptance contract including bounds and rollback flags; external repair not certified",
+      "status": "not_executed",
+      "reason": "Rollback tests passed in selected cases; intervention effectiveness/collateral/verification scalars were not defined. Do not turn test counts into acceptance."
+    },
+    {
+      "id": 30,
+      "animal": "MANTIS",
+      "canonical_scope": "calibrated z-score aggregation and state decision; baseline fitting supplied",
+      "status": "not_executed",
+      "reason": "No calibrated precursor baseline or variance/autocorrelation/curvature z scores."
+    },
+    {
+      "id": 31,
+      "animal": "BISON",
+      "canonical_scope": "single-component queue transition; exact natural-number capacity bound",
+      "status": "not_executed",
+      "reason": "No queue/demand process in the scoped computation."
+    },
+    {
+      "id": 32,
+      "animal": "WEASEL",
+      "canonical_scope": "bounded finding filter; target search/enumeration remains external",
+      "status": "not_executed",
+      "reason": "No independent severity-scored change-key findings supplied; a review is not this bounded filter."
+    },
+    {
+      "id": 33,
+      "animal": "SALMON",
+      "canonical_scope": "unresolved-mass kernel and fuel-bounded trace abstraction; weighted tracing excluded",
+      "status": "not_executed",
+      "reason": "No unresolved-mass or ancestor event data; source pinning alone is insufficient."
+    },
+    {
+      "id": 34,
+      "animal": "ORCA",
+      "canonical_scope": "handoff checks and aggregate coordination formula; pairwise metrics supplied",
+      "status": "not_executed",
+      "reason": "No agent handoff experiment or coordination metrics."
+    },
+    {
+      "id": 35,
+      "animal": "MOLE",
+      "canonical_scope": "observability gap and coverage-gated hidden-failure flag; indicators supplied",
+      "status": "not_executed",
+      "reason": "Source exposes observability limits, but no quantitative relevance/coverage model was prespecified."
+    },
+    {
+      "id": 36,
+      "animal": "LYNX",
+      "canonical_scope": "novelty, yield and emergence contract; reference distances supplied",
+      "status": "not_executed",
+      "reason": "Novelty literature reviewed qualitatively; no distance/yield metric for a numerical novelty verdict."
+    },
+    {
+      "id": 37,
+      "animal": "HORSE",
+      "canonical_scope": "trust/workload/joint-effectiveness kernels and handoff contract",
+      "status": "not_executed",
+      "reason": "No measured human-agent workload/trust/handoff experiment."
+    },
+    {
+      "id": 38,
+      "animal": "TERMITE",
+      "canonical_scope": "agent update and synchronous mapping; graph weighted inputs supplied",
+      "status": "not_executed",
+      "reason": "Cadence uses signed, rebased nonlinear neuron dynamics, not the specified scalar normalized-neighbor update. No correspondence proof."
+    },
+    {
+      "id": 39,
+      "animal": "PHOENIX",
+      "canonical_scope": "recovery completeness and hold-window predicate; fidelity inputs supplied",
+      "status": "not_executed",
+      "reason": "Recovery measured, but no fidelity/integrity/capability scalar schema and hold-window recovery tape for this operator."
+    },
+    {
+      "id": 40,
+      "animal": "COBRA",
+      "canonical_scope": "persistent/proxy divergence and risk kernels; deltas supplied",
+      "status": "not_executed",
+      "reason": "No independent proxy/true-objective divergence channels and confidence history."
+    },
+    {
+      "id": 41,
+      "animal": "WHALE",
+      "canonical_scope": "cumulative deviation, history gap and stability formula; slope supplied",
+      "status": "not_executed",
+      "reason": "No prespecified baseline and history-window stability analysis; endpoint summaries are insufficient."
+    },
+    {
+      "id": 42,
+      "animal": "FALCON",
+      "canonical_scope": "latency/missed/reaction-margin kernel; streaming threshold monitor excluded",
+      "status": "not_executed",
+      "reason": "Reversal lag retained, but no hazard deadline plus detection/intervention timing schema. Trial lag is not hardware latency."
+    },
+    {
+      "id": 43,
+      "animal": "RHINO",
+      "canonical_scope": "retention, amplification and graceful-failure kernels; invariants supplied",
+      "status": "selected_operation_executed",
+      "reason": "Executed stable-skill retention component with raw baselines and absolute .95 floor. Shock amplification and graceful-failure components not executed."
+    },
+    {
+      "id": 44,
+      "animal": "BONOBO",
+      "canonical_scope": "gain, exploitation and cooperation score; dispersion supplied",
+      "status": "not_executed",
+      "reason": "No multiple-agent utility/cooperation or exploitation measurements."
+    },
+    {
+      "id": 45,
+      "animal": "AXOLOTL",
+      "canonical_scope": "recovery, efficiency and resilience; transformation/invariants supplied",
+      "status": "not_executed",
+      "reason": "No independent invariant-retention and transformation/cost schema for regenerative score."
+    },
+    {
+      "id": 46,
+      "animal": "BUTTERFLY",
+      "canonical_scope": "layer update, amplification and bounded trajectory; graph comparison excluded",
+      "status": "not_executed",
+      "reason": "No layered perturbation cascade under its specified clipped nonlinear step; recurrence alone is not equivalence."
+    }
+  ]
+}

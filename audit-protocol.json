@@ -1,0 +1,49 @@
+{
+  "target": "muellerberndt/cadence",
+  "revision": "750c8ef45b17ba052279584e49c685ff3d169a82",
+  "created_utc": "2026-10-08T15:05:58.910909+00:00",
+  "scope": "Independent NumPy CPU audit; no changes to target source; bounded diagnostic, not a fresh full confirmation.",
+  "experiment": {
+    "instrument": "benchmarks/reversal/odour_nursery.py",
+    "arms": [
+      "live",
+      "step",
+      "memory-only",
+      "graph-only",
+      "tabular"
+    ],
+    "seeds": [
+      17001,
+      17002,
+      17003
+    ],
+    "exposures": [
+      300
+    ],
+    "after": 600,
+    "workers": 1,
+    "max_seconds": 600,
+    "protocol_overrides": null
+  },
+  "gates": "Original chamber final>=.9; stable-pair probes>=.95; late arousal<=.2; >=.9 share over live lives; median reversal lag<=150; crashes remain failures. Only one exposure and three seeds: diagnostic gate, no general reliability inference.",
+  "CAT": {
+    "input": "loss=1-final optimal-action fraction, phase B and returned A separately, paired by seed",
+    "transform": "ablated_loss-full_loss",
+    "ablations": {
+      "graph-only": "remove associative memory",
+      "memory-only": "freeze actor policy learning; graph and critic retained"
+    },
+    "output": "penalty and sign; all individual values and mean",
+    "criterion": "positive penalty means removal hurt in this sample; no significance or universal necessity claim"
+  },
+  "RHINO": {
+    "input": "baseline=stable-pair probe fraction during first A; after=stable-pair fraction in B or returned A",
+    "transform": "clip(after/baseline,0,1), canonical special case baseline=0",
+    "output": "retention with raw baseline and after",
+    "criterion": "ratio alone is insufficient; after must also satisfy original .95 absolute floor; zero-baseline is uninformative"
+  },
+  "remaining_zoo": "Applicability review, no synthetic measurements or universal 46/46 verdict; numerical adapters not a proof of full Lean equivalence.",
+  "work": "Record whole-life wall time, routine/aroused/learning/probe/refused sweeps, memory activity and checkpoint overhead separately. No energy or normalized hardware superiority claim.",
+  "tests": "Focused upstream numerical/feedback/qualification/memory/composed-acquisition/policy-credit suite; report optional-backend skips. Do not retune on failures.",
+  "provenance": "Preserve commands, test output, receipt, operation inputs/outputs; current-source verify and git clean check."
+}
