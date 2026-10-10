@@ -1,5 +1,18 @@
 # Cadence Zoo Evidence
 
+<!-- ENUMINOUS-NETWORK:START -->
+**eNuminous network:** [All repositories](https://enuminous.github.io/EFMW/repositories.html) · [EFMW](https://enuminous.github.io/EFMW/) · [102 equations](https://github.com/enuminous/Monolithic_102_EFMW) · [165 triplets](https://enuminous.github.io/FieldSpace/) · [Zoo](https://enuminous.github.io/Tortoise/) · [Lean](https://enuminous.github.io/Aristotle-102-Monolithic-Lean/) · [Engine](https://enuminous.github.io/Archimedes-Engine/) · [Papers](https://enuminous.github.io/medium/papers-essays-index.html) · [Audit](https://github.com/enuminous/EFMW_Post156_Zoo_Audit/blob/main/portfolio/INTERLOCK_AUDIT.md)
+
+[Repository](https://github.com/enuminous/Cadence-Zoo-Evidence) · [Published page](https://enuminous.github.io/Cadence-Zoo-Evidence/)
+
+<details>
+<summary>Repository indexes (1)</summary>
+
+- [index.html](https://github.com/enuminous/Cadence-Zoo-Evidence/blob/main/index.html) · [Open page](https://enuminous.github.io/Cadence-Zoo-Evidence/index.html)
+
+</details>
+<!-- ENUMINOUS-NETWORK:END -->
+
 A reproducible EFMW Zoo audit of [Cadence](https://github.com/muellerberndt/cadence), pinned to version **0.78.0**, commit [`750c8ef45b17`](https://github.com/muellerberndt/cadence/tree/750c8ef45b17ba052279584e49c685ff3d169a82).
 
 **Result:** bounded learning, adaptation and stable-skill retention were demonstrated in this test. General world-model capability, universal convergence and an EFMW physics derivation remain unproved.
